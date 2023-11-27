@@ -1,0 +1,123 @@
+@font-face {
+    font-family: norse;
+    src: url(./Norse-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;  
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 8rem;
+    background-color: rgba(0, 0, 0, .1);
+    width: 100%
+}
+
+.card-title {
+    font-family: norse;
+    font-size: 100px;
+}
+
+.left {
+    display: flex;
+    background-image: url(./jordan-steranka-64LL2fP9uXM-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo {
+    mix-blend-mode: multiply;
+    filter: contrast(1);
+    width: 120px;
+    height: 100px;
+}
+
+
+/* right side */
+
+
+button {
+    margin-top: 16px;
+    margin-left: 147px;
+    border-radius: 16px;
+    padding: 16px;
+    border: none;
+    margin-bottom: 16px;
+    font-weight: 700;
+    background-color: pink;
+}
+
+a:hover, button:hover {
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    flex: 1;
+}
+
+.inner-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 32px;
+    row-gap: 16px
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 300px;
+}
+
+input:invalid, .error {
+    border-color: red;
+}
+
+input:focus {
+    outline: pink;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-header {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
+    background-color: gray;
+}

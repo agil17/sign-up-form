@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="js.js" defer></script>
+  <title>Sign Up Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <header class="header-container">
+        <img src="assets/images.jpeg" alt="odin logo" class="logo" />
+        <h1 class="card-title">Beach Lion</h1>
+      </header>
+    </div>
+    <div class="right-container">
+      <header class="right-header">
+        This is not a real service, but if it was, I bet you'd join. Just look at the matching colors of the beach and logo. Pretty neat ain't it? Fill out the form belown and sign up today!
+      </header>
+      <form onsubmit="handleclick(event)">
+        <div>
+          <p>LET'S DO THIS!</p>
+        </div>
+        <div class="inner-container">
+          <div class="input-container">
+            <label for="first-name">First Name</label>
+            <input type="text" placeholder="John" required id="first-name" name="first-name"/>
+          </div>
+          <div class="input-container">
+            <label for="last-name">Last Name</label>
+            <input type="text" placeholder="Doe" id="last-name" name="last-name" required/>
+          </div>
+          <div class="input-container">
+            <label for="email">Email</label>
+            <input type="text" placeholder="John Doe" id="email" name="email" required/>
+          </div>
+          <div class="input-container">
+            <label for="phone-nnumber">Phone Number</label>
+            <input type="text" placeholder="555-555-5555" id="phone-number" name="phone-number"/>
+          </div>
+          <div class="input-container">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="*******" required/>
+          </div>
+          <div class="input-container">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" placeholder="*******" id="confirm-password" name="confirm-password" required/>
+          </div>
+        </div>
+        <div>
+          <button type="submit">Create Account</button>
+        </div>
+      </form>
+      <footer>
+        <p>Already have an acount? <a href="">Log In</a></p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
